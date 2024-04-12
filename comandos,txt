@@ -1,0 +1,104 @@
+Existem muitos comandos no Git, mas aqui estão 100 comandos comuns e úteis, junto com uma breve descrição de para que servem:
+
+1. `git init`: Inicializa um repositório Git em um diretório.
+2. `git clone <URL>`: Clona um repositório Git existente para um diretório local.
+3. `git add <arquivo>`: Adiciona um arquivo ao index (staging area).
+4. `git commit -m "mensagem"`: Registra as mudanças feitas no repositório.
+5. `git status`: Mostra o estado dos arquivos no diretório de trabalho e no index.
+6. `git diff`: Mostra as diferenças entre o diretório de trabalho e o index.
+7. `git diff --staged`: Mostra as diferenças entre o index e a última versão commitada.
+8. `git log`: Mostra o histórico de commits.
+9. `git branch`: Lista as branches locais.
+10. `git branch <nome_branch>`: Cria uma nova branch.
+11. `git checkout <nome_branch>`: Muda para outra branch.
+12. `git checkout -b <nome_branch>`: Cria e muda para uma nova branch.
+13. `git merge <nome_branch>`: Mescla uma branch com a branch atual.
+14. `git remote`: Mostra os repositórios remotos.
+15. `git remote add <nome> <URL>`: Adiciona um novo repositório remoto.
+16. `git push <remoto> <branch>`: Envia commits locais para um repositório remoto.
+17. `git pull <remoto> <branch>`: Atualiza o repositório local com as mudanças do remoto.
+18. `git fetch <remoto>`: Busca todos os branches do repositório remoto.
+19. `git tag`: Lista as tags.
+20. `git tag <tagname>`: Cria uma tag.
+21. `git show <tagname>`: Mostra informações sobre uma tag específica.
+22. `git checkout <tagname>`: Muda para o estado de um commit especificado por uma tag.
+23. `git reset <opção> <commit>`: Reseta o HEAD para o commit especificado.
+24. `git reset --soft <commit>`: Mantém os arquivos na área de staging.
+25. `git reset --mixed <commit>`: Mantém os arquivos no diretório de trabalho, mas não na área de staging.
+26. `git reset --hard <commit>`: Desfaz todos os commits depois do commit especificado.
+27. `git config`: Configura opções do Git.
+28. `git clean`: Remove arquivos não rastreados.
+29. `git revert <commit>`: Desfaz um commit específico.
+30. `git cherry-pick <commit>`: Aplica as mudanças de um commit específico em outra branch.
+31. `git stash`: Guarda temporariamente as mudanças em um diretório de trabalho sujo.
+32. `git bisect`: Ajuda a encontrar o commit que introduziu um bug.
+33. `git submodule`: Gerencia submódulos Git.
+34. `git blame <arquivo>`: Mostra quem modificou cada linha de um arquivo e em que commit.
+35. `git reflog`: Registra todos os movimentos de HEAD.
+36. `git grep`: Pesquisa o conteúdo dos arquivos em todo o histórico do Git.
+37. `git archive`: Cria um arquivo zip ou tar de um repositório Git.
+38. `git log --graph`: Mostra o histórico de commits em forma de grafo.
+39. `git log --oneline`: Mostra cada commit em uma única linha.
+40. `git log --decorate`: Mostra as referências (branches e tags) de cada commit.
+41. `git log --author=<nome>`: Filtra os commits por autor.
+42. `git log --grep=<padrão>`: Filtra os commits por mensagem.
+43. `git log --since=<data>`: Filtra os commits desde uma determinada data.
+44. `git log --until=<data>`: Filtra os commits até uma determinada data.
+45. `git log <arquivo>`: Mostra os commits que modificaram um arquivo específico.
+46. `git log -- <caminho>`: Mostra os commits que modificaram um caminho específico.
+47. `git log -p`: Mostra as diferenças introduzidas em cada commit.
+48. `git log -n <número>`: Limita o número de commits exibidos.
+49. `git log --stat`: Mostra estatísticas resumidas de cada commit.
+50. `git log --graph --oneline --all`: Combina vários argumentos para uma visualização concisa do histórico.
+51. `git log --pretty=format:<formato>`: Mostra os commits no formato especificado.
+52. `git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit`: Um formato personalizado para o comando de log.
+53. `git remote -v`: Mostra os URLs dos repositórios remotos.
+54. `git push --tags`: Envia tags para o repositório remoto.
+55. `git push <remoto> --delete <branch>`: Exclui uma branch remota.
+56. `git branch -d <branch>`: Exclui uma branch local.
+57. `git branch -D <branch>`: Força a exclusão de uma branch local.
+58. `git pull --rebase <remoto> <branch>`: Faz um pull e rebase das mudanças remotas.
+59. `git rebase <branch>`: Rebase de uma branch.
+60. `git rebase -i <commit>`: Rebase interativo.
+61. `git merge --abort`: Aborta um merge em andamento.
+62. `git merge --squash <branch>`: Mescla uma branch, mas não gera um commit de merge.
+63. `git log --no-merges`: Mostra o histórico de commits, excluindo merges.
+64. `git commit --amend`: Adiciona mudanças ao último commit.
+65. `git commit --fixup=<commit>`: Cria um commit de fixup referente a outro commit.
+66. `git commit --reword=<commit>`: Altera a mensagem de um commit.
+67. `git commit --reset-author`: Reseta o autor do commit para o autor original.
+68. `git commit --allow-empty`: Permite commits vazios.
+69. `git show-branch`: Mostra branches e seus commits.
+70. `git show-branch --all`: Mostra todas as branches e seus commits.
+71. `git show-branch <branch>`: Mostra os commits compartilhados
+
+ com uma branch.
+72. `git show-branch --current`: Mostra a branch atual.
+73. `git show-branch --more=10`: Mostra os últimos 10 commits.
+74. `git show-branch --topics`: Mostra tópicos de cada commit.
+75. `git show-branch --sha1-name`: Mostra os IDs SHA-1 de cada commit.
+76. `git show-branch --date`: Mostra as datas dos commits.
+77. `git show-branch --independent`: Mostra commits independentes.
+78. `git show-branch --sha1-only`: Mostra apenas os IDs SHA-1 dos commits.
+79. `git show-branch --no-merge-base`: Ignora a base do merge.
+80. `git show-branch --sparse`: Mostra commits esporádicos.
+81. `git show-branch --more=10 <branch>`: Mostra os últimos 10 commits de uma branch específica.
+82. `git show-branch --more=10 --list <branch>`: Mostra os commits compartilhados com uma branch específica.
+83. `git show-branch --more=10 --merge-base <branch>`: Mostra os últimos 10 commits até a base do merge.
+84. `git show-branch --more=10 --sha1-name <branch>`: Mostra os IDs SHA-1 dos últimos 10 commits de uma branch.
+85. `git show-branch --more=10 --topics <branch>`: Mostra tópicos dos últimos 10 commits de uma branch.
+86. `git show-branch --more=10 --date <branch>`: Mostra as datas dos últimos 10 commits de uma branch.
+87. `git show-branch --more=10 --independent <branch>`: Mostra os últimos 10 commits independentes de uma branch.
+88. `git show-branch --more=10 --sha1-only <branch>`: Mostra apenas os IDs SHA-1 dos últimos 10 commits de uma branch.
+89. `git show-branch --more=10 --no-merge-base <branch>`: Ignora a base do merge nos últimos 10 commits de uma branch.
+90. `git show-branch --more=10 --sparse <branch>`: Mostra os últimos 10 commits esporádicos de uma branch.
+91. `git clean -n`: Mostra quais arquivos seriam removidos pelo comando `git clean`.
+92. `git clean -f`: Remove os arquivos listados pelo comando `git clean`.
+93. `git clean -df`: Remove arquivos não rastreados e diretórios vazios.
+94. `git clean -xf`: Remove arquivos ignorados pelo Git.
+95. `git gc`: Limpa objetos não utilizados e otimiza o banco de dados do Git.
+96. `git count-objects -v`: Conta objetos no banco de dados Git.
+97. `git fsck`: Verifica a integridade do banco de dados Git.
+98. `git archive --format=zip --output=../<nome_arquivo>.zip <branch>`: Cria um arquivo zip de uma branch específica.
+99. `git archive --format=zip --output=../<nome_arquivo>.zip HEAD`: Cria um arquivo zip do estado atual do repositório.
+100. `git archive --format=zip --output=../<nome_arquivo>.zip <commit>`: Cria um arquivo zip de um commit especifico
